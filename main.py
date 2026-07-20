@@ -17,7 +17,7 @@ BOT_TOKEN = os.getenv("BOT_TOKEN")
 LOG_FILE = os.path.join(os.path.dirname(__file__), 'bot.log')
 
 logging.basicConfig(
-    level=logging.DEBUG,
+    level=logging.WARNING,
     format='[{asctime}] #{levelname:8} {filename}:{lineno} - {name} - {message}',
     style='{',
     filename=LOG_FILE,
