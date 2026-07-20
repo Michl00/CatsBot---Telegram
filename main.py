@@ -4,6 +4,7 @@ import logging
 import os
 import time
 from random import randint
+from dotenv import load_dotenv
 
 import requests
 from aiogram import Bot, Dispatcher
@@ -12,7 +13,8 @@ from aiogram.fsm.context import FSMContext
 from aiogram.fsm.state import State, StatesGroup
 from aiogram.types import CallbackQuery, InlineKeyboardButton, InlineKeyboardMarkup, Message
 
-from config import BOT_TOKEN
+load_dotenv()
+BOT_TOKEN = os.getenv("BOT_TOKEN")
 
 LOG_FILE = os.path.join(os.path.dirname(__file__), 'bot.log')
 
