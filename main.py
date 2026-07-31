@@ -3,9 +3,9 @@ import json
 import logging
 import os
 import time
-from random import randint
-
 import requests
+
+from random import randint
 from aiogram import Bot, Dispatcher
 from aiogram.filters import Command, CommandStart
 from aiogram.fsm.context import FSMContext
